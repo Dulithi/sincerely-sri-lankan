@@ -1,4 +1,11 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { HelloWorld } from "./components/HelloWorld";
+import TestimonialCard from "./components/TestimonialCard";
+import { ExperienceText } from "./components/ExperienceRotatingText";
+import SriLankaSection from "./components/SriLankaSection";
+import IGTaOpportunities from "./components/IGTaOpportunities";
+import IGVOpportunities from "./components/iGVOpportunities";
+import IGTeOpportunities from "./components/IGTeOpportunities";
 
 export const PLASMIC = initPlasmicLoader({
   projects: [
@@ -23,3 +30,46 @@ export const PLASMIC = initPlasmicLoader({
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
 // PLASMIC.registerComponent(...);
+PLASMIC.registerComponent(HelloWorld, {
+  name: 'HelloWorld',
+  props: {
+    verbose: 'boolean',
+    children: 'slot'
+  }
+});
+
+PLASMIC.registerComponent(TestimonialCard, {
+  name: 'TestimonialCard',
+  props: {
+    children: 'slot'
+  }
+});
+
+PLASMIC.registerComponent(ExperienceText, {
+  name: 'ExperienceText',
+  props: {}
+});
+
+PLASMIC.registerComponent(SriLankaSection
+  , {
+  name: 'SriLankaSection',
+  props: {}
+});
+
+PLASMIC.registerComponent(IGTaOpportunities
+  , {
+  name: 'IGTaOpportunities',
+  props: {}
+});
+
+PLASMIC.registerComponent(IGVOpportunities
+  , {
+  name: 'IGVOpportunities',
+  props: {}
+});
+
+PLASMIC.registerComponent(IGTeOpportunities
+  , {
+  name: 'IGTeOpportunities',
+  props: {}
+});

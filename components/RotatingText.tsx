@@ -277,12 +277,12 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
 
 const StyledWrapper = styled.div`
 .text-rotate {
-    display: flex
-    flex-wrap: wrap 
-    white-space: pre-wrap 
-    position: relative 
-    
-  }
+  display: flex;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  position: relative ;
+  
+}
 
 .text-rotate-sr-only {
   position: absolute;
